@@ -106,15 +106,6 @@ if (form && submitBtn) {
 
 }
 
-function switchLanguage(lang) {
-  alert('Language switched to: ' + lang);
-  // You can add your actual language switching logic here
-}
-
-
-
-
-
 const translations = {
   en: {
     heroTitle: "Your Trusted Audit & Tax Consulting Partner",
@@ -191,3 +182,13 @@ function switchLanguage(lang) {
 
   // Add more selectors for other texts as needed
 }
+
+
+  // Fix passive event listener warnings
+  (function() {
+    const passiveEvents = ["touchstart", "touchmove", "wheel"];
+    passiveEvents.forEach(eventName => {
+    document.addEventListener(eventName, () => { }, { passive: true });
+    });
+  })();
+

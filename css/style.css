@@ -24,7 +24,10 @@ body {
 }
 
 body {
-  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  
+    
+
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif, 'Montserrat', sans-serif, 'Marcellus', 'DM Sans';
   color: #111827;
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
